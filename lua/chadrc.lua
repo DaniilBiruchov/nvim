@@ -6,12 +6,24 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "bearded-arc",
+  transparency = true,
+  integrations = { "rainbowdelimiters", "todo" },
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
+M.ui = {
+  tabufline = {
+    order = { "treeOffset", "buffers", "tabs" },
+  },
+  cmp = {
+    style = "atom_colored"
+  },
+}
+
+M.lsp = { signature = true }
 
 return M
